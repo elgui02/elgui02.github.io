@@ -8,4 +8,6 @@ jobs:
         run: echo "${{ secrets.TOKEN_SECRET }}"
       - name: setup node
         uses: actions/setup-node@v4
+        with:
+          node-version: '18'
         
