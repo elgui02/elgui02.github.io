@@ -6,3 +6,6 @@ jobs:
     steps:
       - name: debug variable
         run: echo "${{ secrets.TOKEN_SECRET }}"
+      - name: setup node
+        uses: actions/setup-node@v4
+        
