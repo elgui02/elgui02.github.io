@@ -1,0 +1,8 @@
+name: github io page
+on: push
+jobs:
+  installation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: debug variable
+        run: echo "${{ secrets.TOKEN_SECRET }}"
