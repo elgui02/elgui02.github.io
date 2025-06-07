@@ -12,6 +12,8 @@ jobs:
         uses: actions/checkout@v4
       - name: install dependencias
         run: npm install 
+      - name: run tests
+        run: npm run test
       
         
         
