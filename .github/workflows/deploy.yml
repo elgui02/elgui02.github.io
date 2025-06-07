@@ -12,7 +12,7 @@ jobs:
       - name: install redis cli
         run: sudo apt-get update -y && sudo apt-get install redis-tools -y
       - name: test redis
-        run: redlis-cli -h localhost -p 6379 ping
+        run: redis-cli -h localhost -p 6379 ping
       - name: setup node
         uses: actions/setup-node@v4
         with:
