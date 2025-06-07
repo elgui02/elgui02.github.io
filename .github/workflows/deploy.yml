@@ -17,9 +17,9 @@ jobs:
       - name: build application
         run: npm run build
       - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: actions/upload-pages-artifact@v4
         with:
-          build_dir: public
+          path: public/
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_SECRET }}
   notification:
